@@ -2,7 +2,7 @@ import React from 'react'
 import "./Cards.css"
 import data from '../../utils/data'
 
-function Cards() {
+function Cards({data}) {
     return (
         <div className='cont'>{
             
@@ -15,9 +15,13 @@ function Cards() {
 
                     <img src={data.images1}></img>
                 </div>
+                <div className='flip'>
+
                 <p>
                     {data.contant}
                 </p>
+
+                </div>
             </div>
         ))
         }

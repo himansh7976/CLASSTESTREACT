@@ -4,8 +4,9 @@ import { useState } from 'react'
 import Headings from './components/Headings/Headings'
 import Search from './components/searchbar/Search'
 import Cards from './components/Cards/Cards'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import data from './utils/data';
 
 
 function App() {
@@ -13,12 +14,12 @@ function App() {
 
   return (
     <>
-    <Headings/>
+    <Headings title="Authentic Indian Recipes For The Modern Kitchen" />
     <Search/> 
-    <Cards/>
-  
+    <Cards data={data.slice(0,3)}/>
+    <Headings title="Making Food great again and again"/>   
 
-     
+    <Cards data={data.slice(3,6)}/>
     </>
   )
 }
