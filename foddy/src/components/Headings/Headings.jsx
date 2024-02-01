@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-function Headings(props) {
+function Headings({title}) {
   return (
     <div className='head'>
-    <h3>{props.title}</h3>
+    <h3>{title}</h3>
 
     </div>
 

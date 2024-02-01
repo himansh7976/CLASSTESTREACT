@@ -19,7 +19,9 @@ function App() {
     <Cards data={data.slice(0,3)}/>
     <Headings title="Making Food great again and again"/>   
 
-    <Cards data={data.slice(3,6)}/>
+    <Cards data={data.slice(3,6)}/> 
+    <Headings title="new section start"/>
+    
     </>
   )
 }
